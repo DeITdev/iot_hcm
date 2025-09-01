@@ -6,7 +6,7 @@ app_description = "iot"
 app_email = "danarikram@gmail.com"
 app_license = "mit"
 
-# Installation hooks temporarily commented out
+# Installation hooks temporarily commented out for troubleshooting
 # after_install = "iot_hcm.iot_hcm.install.after_install"
 # before_uninstall = "iot_hcm.iot_hcm.install.before_uninstall"
 

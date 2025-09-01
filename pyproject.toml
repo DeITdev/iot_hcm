@@ -10,13 +10,10 @@ authors = [
 description = "iot"
 requires-python = ">=3.10"
 readme = "README.md"
-dynamic = ["version"]
+version = "0.0.1"
 dependencies = [
     # "frappe~=15.0.0" # Installed and managed by bench.
 ]
-
-[tool.flit.module]
-name = "iot_hcm"
 
 # These dependencies are only installed when developer mode is enabled
 [tool.bench.dev-dependencies]
