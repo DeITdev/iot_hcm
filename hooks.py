@@ -1,3 +1,4 @@
+# iot_hcm/hooks.py
 app_name = "iot_hcm"
 app_title = "Iot Hcm"
 app_publisher = "danar"
@@ -86,12 +87,12 @@ app_license = "mit"
 # ------------
 
 # before_install = "iot_hcm.install.before_install"
-# after_install = "iot_hcm.install.after_install"
+after_install = "iot_hcm.iot_hcm.install.after_install"
 
 # Uninstallation
 # ------------
 
-# before_uninstall = "iot_hcm.uninstall.before_uninstall"
+before_uninstall = "iot_hcm.iot_hcm.install.before_uninstall"
 # after_uninstall = "iot_hcm.uninstall.after_uninstall"
 
 # Integration Setup
@@ -143,23 +144,14 @@ app_license = "mit"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-# 	"all": [
-# 		"iot_hcm.tasks.all"
-# 	],
-# 	"daily": [
-# 		"iot_hcm.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"iot_hcm.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"iot_hcm.tasks.weekly"
-# 	],
-# 	"monthly": [
-# 		"iot_hcm.tasks.monthly"
-# 	],
-# }
+scheduler_events = {
+    "hourly": [
+        "iot_hcm.iot_hcm.tasks.sync_attendance_hourly"
+    ],
+    "daily": [
+        "iot_hcm.iot_hcm.tasks.daily_sync_cleanup"
+    ]
+}
 
 # Testing
 # -------
@@ -237,3 +229,20 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+# Fixtures
+# --------
+# Export fixtures to include them in the app package
+fixtures = [
+    {
+        "doctype": "Custom Field",
+        "filters": [
+            ["fieldname", "in", [
+                "custom_external_sync_section",
+                "custom_external_id",
+                "custom_external_user_name",
+                "custom_external_company",
+                "custom_sync_timestamp"
+            ]]
+        ]
+    }
+]

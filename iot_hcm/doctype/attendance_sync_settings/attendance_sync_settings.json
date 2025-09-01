@@ -1,0 +1,167 @@
+{
+  "actions": [],
+  "allow_rename": 1,
+  "creation": "2025-01-15 10:30:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "external_api_section",
+    "external_api_url",
+    "sync_limit",
+    "column_break_4",
+    "api_timeout",
+    "auto_sync_enabled",
+    "sync_interval",
+    "section_break_8",
+    "test_api_btn",
+    "manual_sync_btn",
+    "sync_status_section",
+    "last_sync_timestamp",
+    "last_sync_status",
+    "last_sync_count",
+    "column_break_12",
+    "total_synced_records",
+    "last_error_message"
+  ],
+  "fields": [
+    {
+      "fieldname": "external_api_section",
+      "fieldtype": "Section Break",
+      "label": "External API Configuration"
+    },
+    {
+      "fieldname": "external_api_url",
+      "fieldtype": "Data",
+      "label": "External API URL",
+      "reqd": 1,
+      "description": "Full URL to the external attendance API endpoint (e.g., https://pre.fiyansa.com/api/attendance-get)"
+    },
+    {
+      "default": "50",
+      "fieldname": "sync_limit",
+      "fieldtype": "Int",
+      "label": "Sync Limit per Request",
+      "description": "Maximum number of records to fetch per API call"
+    },
+    {
+      "fieldname": "column_break_4",
+      "fieldtype": "Column Break"
+    },
+    {
+      "default": "30",
+      "fieldname": "api_timeout",
+      "fieldtype": "Int",
+      "label": "API Timeout (seconds)",
+      "description": "Timeout for API requests in seconds"
+    },
+    {
+      "default": 0,
+      "fieldname": "auto_sync_enabled",
+      "fieldtype": "Check",
+      "label": "Enable Auto Sync",
+      "description": "Enable automatic hourly synchronization"
+    },
+    {
+      "default": "60",
+      "depends_on": "auto_sync_enabled",
+      "fieldname": "sync_interval",
+      "fieldtype": "Int",
+      "label": "Sync Interval (minutes)",
+      "description": "How often to sync automatically (minimum 5 minutes)"
+    },
+    {
+      "fieldname": "section_break_8",
+      "fieldtype": "Section Break",
+      "label": "Manual Actions"
+    },
+    {
+      "fieldname": "test_api_btn",
+      "fieldtype": "Button",
+      "label": "Test API Connection"
+    },
+    {
+      "fieldname": "manual_sync_btn",
+      "fieldtype": "Button",
+      "label": "Run Manual Sync"
+    },
+    {
+      "fieldname": "sync_status_section",
+      "fieldtype": "Section Break",
+      "label": "Sync Status & Statistics"
+    },
+    {
+      "fieldname": "last_sync_timestamp",
+      "fieldtype": "Datetime",
+      "label": "Last Sync Time",
+      "read_only": 1
+    },
+    {
+      "fieldname": "last_sync_status",
+      "fieldtype": "Data",
+      "label": "Last Sync Status",
+      "read_only": 1
+    },
+    {
+      "fieldname": "last_sync_count",
+      "fieldtype": "Int",
+      "label": "Last Sync Count",
+      "read_only": 1,
+      "description": "Number of records synced in the last run"
+    },
+    {
+      "fieldname": "column_break_12",
+      "fieldtype": "Column Break"
+    },
+    {
+      "default": "0",
+      "fieldname": "total_synced_records",
+      "fieldtype": "Int",
+      "label": "Total Synced Records",
+      "read_only": 1,
+      "description": "Total number of records synced since installation"
+    },
+    {
+      "fieldname": "last_error_message",
+      "fieldtype": "Text",
+      "label": "Last Error Message",
+      "read_only": 1
+    }
+  ],
+  "index_web_pages_for_search": 1,
+  "issingle": 1,
+  "links": [],
+  "modified": "2025-01-15 10:35:00.000000",
+  "modified_by": "Administrator",
+  "module": "Iot Hcm",
+  "name": "Attendance Sync Settings",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "print": 1,
+      "read": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    },
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "print": 1,
+      "read": 1,
+      "role": "HR Manager",
+      "share": 1,
+      "write": 1
+    },
+    {
+      "read": 1,
+      "role": "HR User"
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "states": []
+}
