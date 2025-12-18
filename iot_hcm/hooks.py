@@ -4,6 +4,7 @@ app_publisher = "Danar"
 app_description = "IoT Management System for HCM"
 app_email = "danarikram@gmail.com"
 app_license = "mit"
+app_logo_url = "/assets/iot_hcm/images/iot-logo.svg"
 
 # Apps
 # ------------------
@@ -14,14 +15,14 @@ app_license = "mit"
 add_to_apps_screen = [
 	{
 		"name": "iot_hcm",
-		"logo": "/assets/iot_hcm/logo.png",
-		"title": "IoT HCM",
-		"route": "/app/iot-hcm",
+		"logo": "/assets/iot_hcm/images/iot-logo.svg",
+		"title": "Internet of Things",
+		"route": "/app/internet-of-things",
 	}
 ]
 
 # App home route
-app_home = "/app/iot-hcm"
+app_home = "/app/internet-of-things"
 
 # Fixtures - data that gets loaded on installation
 # Using Frappe's built-in Custom HTML Block doctype
