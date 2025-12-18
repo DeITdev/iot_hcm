@@ -24,8 +24,9 @@ add_to_apps_screen = [
 app_home = "/app/iot-hcm"
 
 # Fixtures - data that gets loaded on installation
+# Using Frappe's built-in Custom HTML Block doctype
 fixtures = [
-	{"dt": "Custom HTML Block", "filters": [["block_name", "=", "IoT Dashboard"]]}
+	{"dt": "Custom HTML Block", "filters": [["name", "=", "IoT Dashboard"]]}
 ]
 
 # Includes in <head>
