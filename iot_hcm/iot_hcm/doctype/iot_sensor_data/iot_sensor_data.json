@@ -1,0 +1,115 @@
+{
+  "actions": [],
+  "allow_rename": 0,
+  "autoname": "format:SENSOR-{device}-{#####}",
+  "creation": "2025-12-19 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "device",
+    "sensor_type",
+    "column_break_1",
+    "timestamp",
+    "section_break_data",
+    "value",
+    "unit",
+    "column_break_2",
+    "quality",
+    "raw_data"
+  ],
+  "fields": [
+    {
+      "fieldname": "device",
+      "fieldtype": "Link",
+      "in_list_view": 1,
+      "in_standard_filter": 1,
+      "label": "Device",
+      "options": "IoT Device",
+      "reqd": 1
+    },
+    {
+      "default": "Temperature",
+      "fieldname": "sensor_type",
+      "fieldtype": "Select",
+      "in_list_view": 1,
+      "in_standard_filter": 1,
+      "label": "Sensor Type",
+      "options": "Temperature\nHumidity\nPressure\nLight\nMotion\nProximity\nCO2\nVoltage\nCurrent\nPower\nCustom"
+    },
+    {
+      "fieldname": "column_break_1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "default": "Now",
+      "fieldname": "timestamp",
+      "fieldtype": "Datetime",
+      "in_list_view": 1,
+      "label": "Timestamp",
+      "reqd": 1
+    },
+    {
+      "fieldname": "section_break_data",
+      "fieldtype": "Section Break",
+      "label": "Sensor Data"
+    },
+    {
+      "fieldname": "value",
+      "fieldtype": "Float",
+      "in_list_view": 1,
+      "label": "Value",
+      "precision": "4",
+      "reqd": 1
+    },
+    {
+      "fieldname": "unit",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "label": "Unit"
+    },
+    {
+      "fieldname": "column_break_2",
+      "fieldtype": "Column Break"
+    },
+    {
+      "default": "Good",
+      "fieldname": "quality",
+      "fieldtype": "Select",
+      "label": "Data Quality",
+      "options": "Good\nSuspect\nBad"
+    },
+    {
+      "fieldname": "raw_data",
+      "fieldtype": "Code",
+      "label": "Raw Data (JSON)",
+      "options": "JSON"
+    }
+  ],
+  "icon": "fa fa-thermometer-half",
+  "index_web_pages_for_search": 1,
+  "links": [],
+  "modified": "2025-12-19 00:00:00.000000",
+  "modified_by": "Administrator",
+  "module": "Iot Hcm",
+  "name": "IoT Sensor Data",
+  "naming_rule": "Expression",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "sort_field": "timestamp",
+  "sort_order": "DESC",
+  "states": [],
+  "track_changes": 0
+}

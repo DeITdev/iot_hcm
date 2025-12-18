@@ -1,7 +1,7 @@
 app_name = "iot_hcm"
-app_title = "Iot Hcm"
-app_publisher = "danar"
-app_description = "iot"
+app_title = "IoT HCM"
+app_publisher = "Danar"
+app_description = "IoT Management System for HCM"
 app_email = "danarikram@gmail.com"
 app_license = "mit"
 
@@ -11,15 +11,22 @@ app_license = "mit"
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page
-# add_to_apps_screen = [
-# 	{
-# 		"name": "iot_hcm",
-# 		"logo": "/assets/iot_hcm/logo.png",
-# 		"title": "Iot Hcm",
-# 		"route": "/iot_hcm",
-# 		"has_permission": "iot_hcm.api.permission.has_app_permission"
-# 	}
-# ]
+add_to_apps_screen = [
+	{
+		"name": "iot_hcm",
+		"logo": "/assets/iot_hcm/logo.png",
+		"title": "IoT HCM",
+		"route": "/app/iot-hcm",
+	}
+]
+
+# App home route
+app_home = "/app/iot-hcm"
+
+# Fixtures - data that gets loaded on installation
+fixtures = [
+	{"dt": "Custom HTML Block", "filters": [["block_name", "=", "IoT Dashboard"]]}
+]
 
 # Includes in <head>
 # ------------------
