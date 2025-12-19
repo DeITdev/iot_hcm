@@ -2,7 +2,6 @@
   "app": "iot_hcm",
   "charts": [],
   "content": "[{\"id\":\"header1\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>IoT Dashboard</b></span>\",\"col\":12}},{\"id\":\"custom1\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"IoT Dashboard\",\"col\":12}},{\"id\":\"spacer1\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"header2\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}},{\"id\":\"shortcut1\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"IoT Device\",\"col\":3}},{\"id\":\"shortcut2\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"IoT Sensor Data\",\"col\":3}},{\"id\":\"spacer2\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"header3\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Masters & Reports</b></span>\",\"col\":12}},{\"id\":\"card1\",\"type\":\"card\",\"data\":{\"card_name\":\"Devices\",\"col\":4}},{\"id\":\"card2\",\"type\":\"card\",\"data\":{\"card_name\":\"Sensor Data\",\"col\":4}},{\"id\":\"card3\",\"type\":\"card\",\"data\":{\"card_name\":\"Settings\",\"col\":4}}]",
-  "creation": "2025-12-19 00:00:00.000000",
   "custom_blocks": [
     {
       "custom_block_name": "IoT Dashboard",
@@ -11,70 +10,42 @@
   ],
   "docstatus": 0,
   "doctype": "Workspace",
-  "for_user": "",
-  "hide_custom": 0,
   "icon": "wifi",
   "idx": 0,
-  "is_hidden": 0,
-  "label": "IoT HCM",
+  "label": "Internet of Things",
   "links": [
     {
-      "hidden": 0,
-      "is_query_report": 0,
       "label": "Devices",
       "link_count": 1,
-      "onboard": 0,
       "type": "Card Break"
     },
     {
-      "hidden": 0,
-      "is_query_report": 0,
       "label": "IoT Device",
-      "link_count": 0,
       "link_to": "IoT Device",
       "link_type": "DocType",
       "onboard": 1,
       "type": "Link"
     },
     {
-      "hidden": 0,
-      "is_query_report": 0,
       "label": "Sensor Data",
       "link_count": 1,
-      "onboard": 0,
       "type": "Card Break"
     },
     {
-      "hidden": 0,
-      "is_query_report": 0,
       "label": "IoT Sensor Data",
-      "link_count": 0,
       "link_to": "IoT Sensor Data",
       "link_type": "DocType",
       "onboard": 1,
       "type": "Link"
     },
     {
-      "hidden": 0,
-      "is_query_report": 0,
       "label": "Settings",
-      "link_count": 0,
-      "onboard": 0,
       "type": "Card Break"
     }
   ],
-  "modified": "2025-12-19 00:00:00.000000",
-  "modified_by": "Administrator",
   "module": "Iot Hcm",
-  "name": "IoT HCM",
-  "number_cards": [],
-  "owner": "Administrator",
-  "parent_page": "",
+  "name": "Internet of Things",
   "public": 1,
-  "quick_lists": [],
-  "restrict_to_domain": "",
-  "roles": [],
-  "sequence_id": 1.0,
   "shortcuts": [
     {
       "color": "Blue",
