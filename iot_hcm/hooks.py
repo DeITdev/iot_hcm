@@ -17,12 +17,12 @@ add_to_apps_screen = [
 		"name": "iot_hcm",
 		"logo": "/assets/iot_hcm/images/iot-logo.svg",
 		"title": "Internet of Things",
-		"route": "/app/internet-of-things",
+		"route": "/app/iot-hcm",
 	}
 ]
 
 # App home route
-app_home = "/app/internet-of-things"
+app_home = "/app/iot-hcm"
 
 # Fixtures - data that gets loaded on installation
 # Using Frappe's built-in Custom HTML Block doctype
